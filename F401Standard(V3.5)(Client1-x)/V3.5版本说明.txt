@@ -1,0 +1,34 @@
+V2.2：
+增加 bsp_imu.c/.h    (9轴陀螺仪)
+        bsp_flash.c/.h（stm32内部flash操作库）
+修改 bsp_usart.c
+        app_main.c
+
+V2.3:
+基本解决EC11数据抖动问题
+修改appMenu,加入参数调节功能
+修改osc（示波器部分）
+
+V3.0
+菜单
+NRF24L01收发调通
+
+V3.1
+删除NRF24L01
+增加bsp_spi,spi2接收调通，测试spi信号转发
+
+
+V3.2
+提取spi信号中的图像信息存入数组——调通
+
+V3.3
+正常显示SPI提取出的视频信号
+UDP网络图传实现（W5500调通）
+GUI实现（除一键启动和测量部份逻辑外，功能基本齐全）
+OPENMV指令数据功能实现
+V3.3.1
+Angle_length加入了测量部份（待测）
+
+V3.5
+测量x_max
+一键启动

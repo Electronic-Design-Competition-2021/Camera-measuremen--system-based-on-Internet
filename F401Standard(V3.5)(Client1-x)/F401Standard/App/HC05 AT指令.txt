@@ -1,0 +1,12 @@
+常用AT命令：
+AT+VERSION?　　　　 　　　　  返回HC-05的软件版本号
+AT+NAME？　　　　　　　　　　返回HC-05的名字
+AT+UART?　　　　　　　　　　  返回蓝牙波特率
+AT+UART=115200,0,0　　　　　  设置串口波特率115200,1位停止位，无校验
+【AT+UART=<param1>,<param2>,<param3>　　param1: 波特率　　param2: 停止位， 0=1位，1=2位　　param3: 校验位， 0=无校验，1=奇校验，2=偶校验　　默认设置为9600,0,0】
+AT+NAME=bluetooth　　　　   　 修改蓝牙模块的名字为bluetooth
+AT+PSWD？　　　　　　　　　  查询配对密码
+AT+PSWD=”1234”　　　　　　    设置密码1234
+AT+ROLE?　　　　　　　　　　 查询主从状态，=1：设置成主，=0：设置成从，=2：设置成回环
+AT+ROLE=0　　　　　　　　　  设置成从
+AT+ORGL　　　　　　　　　　  恢复出厂默认设置
